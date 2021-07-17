@@ -2,7 +2,6 @@
 //4000 bytes da un file li stampa in output con fprintf
 
 #include <fcntl.h>
-#include "apue.h"
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
