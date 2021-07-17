@@ -7,7 +7,7 @@ Esercizi con librerie pthread e apue per programmazione di sistema, thread, sinc
 - se richiede apue (#include "apue.h")
 
 `$ gcc -o programma nomeprogramma.c -I path/to/apue.3e/include/ -L path/to/apue.3e/lib/ -lapue`
-- se richiede pthread, semaphore, fcntl, sys/* etc
+- se richiede pthread (#include pthread.h, semaphore.h, fcntl.h, sys/\*.h, e così via)
 
 `$gcc -o programma nomeprogramma.c -lpthread`
 
