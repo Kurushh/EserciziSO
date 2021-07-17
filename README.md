@@ -1,6 +1,6 @@
 # esercizi_sistemioperativi
-Esercizi con librerie pthread e apue per programmazione di sistema, thread, sincronizzazione e mutua esclusione di processi.
-Gli esercizi vanno da quelli più facili a quelli più complessi.
+Esercizi di preparazione all'esame di Sistemi Operativi.
+Gli esercizi vanno da quelli più facili a quelli più complessi e fanno uso delle librerie pthread e apue.
 
 ## Prerequisiti:
 - [Libreria apue](https://github.com/shichao-an/apue.3e)
