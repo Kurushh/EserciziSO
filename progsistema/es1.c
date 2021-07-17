@@ -28,7 +28,7 @@ int main(int argc, char **argv){
 	}
 
 	//Check if the target file exists, if not create it
-	if ( (fd_wrt = open(argv[2], O_WRONLY) )== -1 ){
+	if ( (fd_wrt = open(argv[2], O_CREAT|O_WRONLY, S_IRWXU|S_IRWXG|S_IRWXO) )== -1 ){
 		perror("Error opening file to copy");
 		exit(-3);
 	}
