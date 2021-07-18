@@ -14,9 +14,10 @@
 #include "apue.h"
 
 #define nbuf (int)sizeof(char)*4
-//es input: "3 4" (without "")
-//3=0, ' '=1, 4=2, '\n'=3 aka the send
-//sizeof(char)=8, 8*4=32
+//Esempio di input "3 4", 
+//"3 4" è una stringa composta da:
+//3<-0,' '<-1,'4'<-2, \n <-3
+//Quindi servono 4 byte per rappresentare questa stringa
 
 int main(){
 	char in[nbuf];
@@ -25,10 +26,10 @@ int main(){
 
 	while(a != -1 && b!= -1){
 
-		//Clear the buffer;
+		//Pulisci standard input
 		fflush(STDIN_FILENO);
 		for(int i=0;i<nbuf;i++){
-			in[nbuf]=(char)0; //clear input buffer
+			in[nbuf]=(char)0; //Pulisci buffer di input
 		}
 
 		for(int i=0;i<3;i++){
@@ -50,7 +51,7 @@ int main(){
 			
 		};
 		c = a+b;
-		sprintf(out,"%d",c); //converts integer to string
+		sprintf(out,"%d",c); //Funzione che converte la stringa ad intero
 		
 		
 		if ( (c = write(STDOUT_FILENO, &out,sizeof(out))) != sizeof(out)){
