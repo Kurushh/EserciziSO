@@ -9,4 +9,5 @@ Scrivere un programma che esegue il comando di shell "ls -R | grep <pat>" dove "
 Scrivere un programma che esegua il comando shell "ls | sort | grep <pat>" con tre processi distinti (pipe anonime)
 ## [Esercizio 4](es4.c)
 Scrivere un programma che gestisce il comportamento di un padre e due figli (fdispari e fpari): il padre legge numeri da tastiera finché non incontra -1.
-Se il numero è pari lo manda a fpari, altrimenti lo manda a fdispari. I figli effettuano le somme parziali e poi lo rispediscono al padre che effettua la somma totale
+Se il numero è pari lo manda a fpari, altrimenti lo manda a fdispari. I figli effettuano le somme parziali e poi lo rispediscono al padre che effettua la somma totale.
+Edit: [grazie!](http://sekrit.de/webdocs/c/beginners-guide-away-from-scanf.html)
