@@ -1,7 +1,3 @@
-//Scrivi un programma che prende in input una directory da riga di 
-//comando e stampa in input il size di tutti i file al suo interno
-//e scarta le directory
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,7 +17,7 @@ int main(int argc, char *argv[]){
 	int filename = 0;
 
 	if (argc < 2 ){
-		printf("Inserire una directory in input\n");
+		printf("Usage: ex4 path\n");
 		exit(1);
 	}
 
@@ -30,7 +26,7 @@ int main(int argc, char *argv[]){
 	dirsize = strlen(argv[1]);
 
 	if ( !(dir = opendir(argv[1]) ) ){
-		printf("Err apertura directory\n");
+		printf("Err opening the directory\n");
 	       	exit(2);
 	}
 
