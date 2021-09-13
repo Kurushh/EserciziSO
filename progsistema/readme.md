@@ -13,6 +13,6 @@ e stampa a video il risultato utilizzando la write.
 Termina quando il primo input è -1.
 Assume che gli interi consistano di una sola cifra.
 
-## [Esercizio 4:](es4.c)
+## [Esercizio 4:](ex4.c)
 Scrivere un programma che prende in input una directory, stampa il nome e il size di tutti i file al suo interno, ad eccezione
 delle directory
