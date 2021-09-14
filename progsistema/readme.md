@@ -16,3 +16,6 @@ Assume che gli interi consistano di una sola cifra.
 ## [Esercizio 4:](ex4.c)
 Scrivere un programma che prende in input una directory, stampa il nome e il size di tutti i file al suo interno, ad eccezione
 delle directory
+
+## [Esercizio 5:](ex5.c)
+Scrivere un programma che presa in input una directory, dopo averne analizzato il contenuto, identifichi il file di lunghezza minima e ne stampi la maschera dei permessi relativi agli "altri"
