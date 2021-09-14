@@ -1,7 +1,3 @@
-/*
-Scrivere un programma che presa in input una directory, dopo averne analizzato
-il contenuto, identifichi il file di lunghezza minima e ne stampi la maschera dei permessi relativi agli "altri"
- */
 
 #include <stdio.h>
 #include <stdlib.h>
