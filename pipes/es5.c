@@ -1,10 +1,3 @@
-/* Esercizio 2 15/05/2008
- Realizzare un programma che riceve 2 nm di file da riga di comando, e genera 1 proc figlio. 
- Il padre legge dal primo file e scrive quello ke legge in una pipe. il figlio legge dalla pipe
- e scrive quello ke legge nel secondo file.Il tutto termina quando il padre nn ha altra da
- leggere.il secondo file deve essere creato,se nn esiste,cn permessi di lett e scritt per il
- proprietario e per il gruppo.*/
-//Nota usa pipe con nome 
 
 #include <stdio.h>
 #include <stdlib.h>
