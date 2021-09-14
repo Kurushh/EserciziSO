@@ -50,23 +50,18 @@ int main(int argc, char *argv[]){
 		int t = 777;
 		file1_descr = open(argv[1], O_RDONLY);
 		pipe_descr = open("pipe",O_WRONLY);
+		
 		while ( read(file1_descr, buffer, 1024) != 0 ){
-			printf("%s\n",buffer);
-//			rd = atoi(buffer);
-			printf("%d \n",rd);
 			write(pipe_descr, buffer, 1024);
-			memset(buffer,0,1024);
+			memset(buffer,0,1024); //Clear buffer
 		}
 	}else if (res == 0){ //children
-		char c = '\n';
-		int t = 666;
 		file2_descr = open(argv[2], O_WRONLY|O_APPEND);
-		printf("file2_descr = %d\n",file2_descr);
 		pipe_descr = open("pipe",O_RDONLY);
+		
 		while (read(pipe_descr, buffer, 1024) ){
-			printf("t: %d\n",t);
 			write(file2_descr, buffer,1024);
-			memset(buffer,0,1024);
+			memset(buffer,0,1024); //Clear buffer
 		}
 	}
 
