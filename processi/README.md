@@ -33,3 +33,8 @@ i: 10 processo ID:49072 padre ID:49071 figlio ID:0
 
 Da notare come l'ultimo processo non ha figli, childpid è la variabile che raccoglie l'id del processo figlio, inizialmente è inizializzata a 0.
 Ogni processo P(i) ha l'ID pari a P(i-1) + 1
+
+___
+
+## Esercizio 2
+Programma che crea un albero binario (completo) di processi.
