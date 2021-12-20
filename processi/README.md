@@ -39,7 +39,7 @@ ___
 ## Esercizio 2
 Programma che crea un albero binario (completo) di processi.
 
-```
+```C
 for (i=0; i<n-1; i++){
                 if ( ( childpid_2=fork() ) && ( childpid_1=fork() ) ) {
                         break;
