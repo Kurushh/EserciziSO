@@ -50,7 +50,7 @@ for (i=0; i<n-1; i++){
 ## Esercizio 3
 Programma che crea un albero n-ario completo di processi
 
-```
+```C
 flag = 0;
 //at the end of the 2th for cicle:
 //flag == 0 if child ,flag == 1 if parent
