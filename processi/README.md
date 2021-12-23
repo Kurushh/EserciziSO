@@ -50,3 +50,24 @@ for (i=0; i<n-1; i++){
 ## Esercizio 3
 Programma che crea un albero n-ario completo di processi
 
+```
+flag = 0;
+//at the end of the 2th for cicle:
+//flag == 0 if child ,flag == 1 if parent
+
+for (i=0; i<h; i++){
+	for(j=0;j<n;j++){
+		if ( (t=fork()) == 0){ //child
+			flag = 1;
+                        break;
+                }else{ //parent
+                        wait(NULL);
+                }
+
+         }
+         if ( flag == 0){
+         //if a parent, terminate because you already created all the son you had to
+         	break;
+          }
+}
+```
