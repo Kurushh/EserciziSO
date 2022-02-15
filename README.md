@@ -1,7 +1,7 @@
-# esercizi_sistemioperativi
+# EserciziSO
 Anno: 2021/2022
 
-Esercizi di preparazione all'esame di Sistemi Operativi.
+Esercizi di preparazione all'esame di Sistemi Operativi sulla programmazione UNIX.
 Gli esercizi vanno da quelli più facili a quelli più complessi e fanno uso di alcune librerie tra cui pthread.
 
 La [Libreria apue](https://github.com/shichao-an/apue.3e) può essere rimpiazzata con varie librerie C più aggiornate. 
